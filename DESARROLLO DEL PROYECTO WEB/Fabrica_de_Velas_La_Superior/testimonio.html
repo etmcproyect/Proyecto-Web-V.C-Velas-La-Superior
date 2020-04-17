@@ -13,31 +13,42 @@
 </head>
 <body>
 
-    <header class="d-flex bd-highlight">
-        <div class="logo d-flex justify-content-center align-items-center">
-            <img class="img-fluid logo-img" src="img/logo/logo-final-sinmargen.png" alt="Logo Empresa">
-        </div>
-        <div class="titulo d-flex align-items-center p-3">
-            <h1 class="nombre-empresa">V & C Fábrica de velas "La Superior"</h1>
-        </div>
-        <a class="menu-movil ml-auto bd-highlight" href="#">
-            <div class="icon-menu">
+    <!--HEADER Y MENU DE LA PAGINA WEB CON RESPONSIVE EN RESOLUCIONES DE 1920px 1360px 1280px 1080px 480px y 380px-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a href="#" class="d-flex align-items-center">
 
+                <img class="logo-img" src="img/logo/logo-final-sinmargen.png" alt="logo de la empresa">
+            </a>
+            <a href="#" class="d-flex justify-content-center align-items-center">
+                <h1 class="nombre-empresa">V & C Fábrica de velas "La Superior"</h1>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#firstNavbar">
+                <div class="icon-menu">
+
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="firstNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactanos</a></li>
+                </ul>
             </div>
-        </a>
-        <nav class="menu  ml-auto bd-highlight">
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
-                <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
-                <li class="nav-item"><a class="nav-link" href="">Testimonios</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacto.html">Contactanos</a></li>
-            </ul>
         </nav>
     </header>
+    <!--AQUI TERMINA EL HEADER-->
+
+    <!--AQUI INICIA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
     <main>
         <h2>Contenido</h2>
     </main>
+    <!--AQUI TERMINA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
+
+    <!--AQUI COMIENZA EL FOOTER DE LA PAGINA WEB-->
     <footer>
         <div class="row">
             <div class="footer-card d-flex justify-content-center flex-column col-sm-4">
@@ -71,6 +82,7 @@
             <p>© Copyright 1998-2016 Nombre Empresa Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!--AQUI TERMINA EL FOOTER DE LA PAGINA-->
 
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
