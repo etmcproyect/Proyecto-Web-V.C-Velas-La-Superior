@@ -39,6 +39,10 @@ h1{
 
 /*#region CSS PARA OTROS COMPONENTES*/
 
+main{
+    background-color: #F5F5F5;
+}
+
 /*#region carousel testimonio*/
 main>.container{
     max-width: 115.6rem;
@@ -51,6 +55,7 @@ main>.container>.row{
 }
 h3{
     font-size: 2.5rem;
+    font-weight: bolder;
 }
 .carousel{
     width: 100%;
@@ -85,8 +90,11 @@ h3{
 /*#endregion*/
 
 /*#region card-testimonio*/
+.slider-testimonios{
+    padding: 8rem 8rem 1rem 8rem;
+}
 .card-testimonio{
-    padding: 4.5rem 0 4.5rem 0;
+    padding: 4.5rem 5rem 4.5rem 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +104,41 @@ h3{
     height: 22.4rem;
     border-radius: 100%;
 }
-
+.card-titulo-testimonio{
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+.card-descripcion-testimonio{
+    font-size: 1.4rem;
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: justify;
+}
+.enlace-testimonio{
+    font-weight: bolder;
+    text-align: end;
+}
+.control-nav{
+    position: absolute;
+    top: 40%;
+    width: 115.6rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.control-prev{
+    background: url("../img/iconos/arrow/Left-arrow.svg") no-repeat;
+    background-size: contain;
+}
+.control-next{
+    background: url("../img/iconos/arrow/Right-arrow.svg") no-repeat;
+    background-size: contain;
+}
+.control-prev,.control-next{
+    width: 3rem;
+    height: 5rem;
+}
 
 /*#endregion card-testimonio*/
 
@@ -219,10 +261,12 @@ footer>.row{
         max-width: 164rem;
     }
     main>.container>.row{
+        padding: 0 4rem;
         max-width: 164rem;
     }
     h3{
-        font-size: 2.8rem;
+        font-size: 3rem;
+        font-weight: bolder;
     }
     .carousel-img{
         width: 100%;
@@ -239,6 +283,35 @@ footer>.row{
     }
 
     /*#endregion CSS PARA OTROS COMPONENTES*/
+
+    /*#region card-testimonio*/
+    .card-testimonio{
+        padding: 4.5rem 5rem 4.5rem 5rem;
+    }
+    .card-img-testimonio{
+        padding: 0 3rem 0 2rem !important;
+    }
+    .img-testimonio{
+        height: 26rem;
+    }
+    .card-titulo-testimonio{
+        font-size: 2.6rem;
+    }
+    .card-descripcion-testimonio{
+        font-size: 1.8rem;
+        padding: 1rem 2.5rem 0rem 2.5rem;
+    }
+    .enlace-testimonio{
+        padding-right: 2.5rem;
+    }
+    .enlace-testimonio>a{
+        font-size: 1.4rem;
+    }
+    .control-nav{
+        width: 164rem;
+    }
+
+    /*#endregion card-testimonio*/
 
     /*#region Footer para resolucion de 1920px e*/
     .footer-card{

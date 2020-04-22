@@ -1,0 +1,30 @@
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    responsiveClass:true,
+    navElement: 'div',
+    navText: [],
+    navContainerClass: 'control-nav',
+    navClass: ['control-prev','control-next'],
+    dots: false,
+    mouseDrag: false,
+    touchDrag: false,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:2,
+            nav:true
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+});
+$('#carouselId').carousel({
+    interval:false
+})
