@@ -41,12 +41,97 @@ h1{
 
 
 
+/*----------------------------------------*/
+/* COMIENZO de estilos css del index */
+/*-----------------------------------------*/
+
+body {
+    background: #F5F5F5;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+ .fondo1 {
+    background:url(../img/inicio/Fondo.jpg);
+    width: 100%;
+    background-size: cover;
+}
+
+.fondo1 p {
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+section article .imagen {
+    width: 500px;
+    height: 250px;
+    border: 1px solid black;
+}
+
+ .imagen1 {
+    width: 250px;
+    height: 250px;
+    border: 2px solid white;
+}
+
+section article p {
+    font-size: 1.5rem;
+}
+
+section article .testimonio1 {
+
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    border: 3px solid #7e7676;
+    /* box-shadow: 5px 5px 0px #bbaeae; */
+}
+
+/*----------------------------------------*/
+/* FINAL de estilos css del index */
+/*-----------------------------------------*/
+
+
+
+/*----------------------------------------*/
+/* COMIENZO de estilos css del PRODUCTOS */
+/*-----------------------------------------*/
+section article .producto {
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #000000  
+}
+
+.producto-mas-info {
+    font-size: 1.5rem;
+}
+
+.paginacion {
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+/*----------------------------------------*/
+/* FINAL de estilos css del PRODUCTOS */
+/*-----------------------------------------*/
+
+
+
 /*CSS PARA OTROS COMPONENTES*/
 
 /*Footer Para Resolucion de 1360 1280 e*/
 footer{
     background-color: rgba(0,27,133,0.83);
 }
+
 footer>.row{
     margin: 0;
 }
