@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--#region HEADER Y MENU DE LA PAGINA WEB CON RESPONSIVE EN RESOLUCIONES DE 1920px 1360px 1280px 1080px 480px y 380px-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a href="#" class="d-flex align-items-center">
+
+                <img class="logo-img" src="img/logo/logo-final-sinmargen.png" alt="logo de la empresa">
+            </a>
+            <a href="#" class="d-flex justify-content-center align-items-center">
+                <h1 class="nombre-empresa">V & C Fábrica de velas "La Superior"</h1>
+            </a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#firstNavbar">
+                <div class="icon-menu">
+
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="firstNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contactanos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--#endregionAQUI TERMINA EL HEADER-->
+
+    <!--#region AQUI INICIA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
+    <main>
+        <div class="container">
+            <!--#region slider Producto-->
+            <h3 class="text-sm-left">Nombre Producto</h3>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div id="carousel-producto" class="col-sm-8 carousel slide" data-ride="carousel">
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item carousel-item-producto active">
+                                    <img class="carousel-img-producto" src="img/productos/vela24.jpg" alt="First slide">
+                                </div>
+                                <div class="carousel-item carousel-item-producto">
+                                    <img class="carousel-img-producto" src="img/productos/vela25.jpg"
+                                         alt="Second slide">
+                                </div>
+                                <div class="carousel-item carousel-item-producto">
+                                    <img class="carousel-img-producto" src="img/productos/vela26.jpg" alt="Third slide">
+                                </div>
+                                <div class="carousel-item carousel-item-producto">
+                                    <img class="carousel-img-producto" src="img/productos/vela27.jpg" alt="Third slide">
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev" href="#carousel-producto" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-producto" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+
+                        </div>
+                        <div class="col-sm-4 carousel-descripcion-producto">
+                            <h4 class="producto-titulo-descripcion">Descripcion</h4>
+                            <p class="producto-descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Cumque sint odio minus vitae sequi enim fugiat velit consectetur, impedit voluptatum
+                                nemo inventore ratione, pariatur maxime modi, eaque assumenda. Distinctio, praesentium!
+                                adipisicing elit. Cumque sint odio minus vitae sequi enim fugiat velit consectetur,
+                                impedit voluptatum nemo inventore ratione, pariatur maxime modi, eaque assumenda.
+                                Distinctio, praesentium! Cumque sint odio minus vitae sequi enim fugiat velit
+                                consectetur, impedit voluptatum nemo inventore</p>
+                        </div>
+                        <div class="col-sm-8 carousel-mini-productos">
+                            <img class="carousel-mini-producto" src="img/productos/vela24.jpg"
+                                 data-target="#carousel-producto" data-slide-to="0" class="active">
+                            <img class="carousel-mini-producto" src="img/productos/vela25.jpg"
+                                 data-target="#carousel-producto" data-slide-to="1">
+                            <img class="carousel-mini-producto" src="img/productos/vela26.jpg"
+                                 data-target="#carousel-producto" data-slide-to="2">
+                            <img class="carousel-mini-producto" src="img/productos/vela27.jpg"
+                                 data-target="#carousel-producto" data-slide-to="3">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--#endregion slider producto-->
+
+            <!--#region slider card producto-->
+            <div class="slider-productos">
+                <h3>Más de Nuestros Productos</h3>
+            </div>
+            <div class="owl-carousel owl-theme owl-loaded pb-5" id="carousel-card-producto">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela24.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela25.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela26.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela27.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela28.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+                            <div class="card producto-card">
+                                <img src="img/productos/vela29.jpg" class="card-img-top producto-card-img" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Card title</h5>
+                                    <p class="card-text producto-card-text text-justify">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <a class="producto-card-link" href="#">Más Información</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#endregion slider card producto-->
+        </div>
+    </main>
+    <!--#endregion AQUI TERMINA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
+
+    <!--#region AQUI COMIENZA EL FOOTER DE LA PAGINA WEB-->
+    <footer>
+        <div class="row">
+            <div class="footer-card d-flex justify-content-center flex-column col-sm-4">
+                <h5 class="footer-item-titulo">Para Mayor Informacion</h5>
+                <p>Direccion: <span>Lorem ipsum dolor sit amet Lorem</span></p>
+                <p>Telefono: <span>Lorem ipsum dolor sit amet</span></p>
+                <p>Tienda Principal: <span>Lorem ipsum dolor sit amet Lorem</span></p>
+                <p>Correo: <span>Lorem ipsum dolor sit amet</span></p>
+            </div>
+            <div class="footer-map d-flex justify-content-center align-items-center col-sm-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d956.8520264488265!2d-71.53379548740885!3d-16.40408703189563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2spe!4v1586885261281!5m2!1ses!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="footer-noticia col-sm-4 d-flex flex-column justify-content-center">
+                <h5 class="footer-item-titulo">Descubre más de nosotros</h5>
+                <img class="footer-noticia-img img-fluid" src="img/noticias/Noticia1.jpg" alt="Noticia">
+                <div class="row">
+                    <p class="col-6 ">Lorem ipsum dolor</p>
+                    <div class="col-6 d-flex justify-content-end">
+                        <a href="" >Leer Más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-redes-sociales d-flex justify-content-center">
+            <img src="img/redesociales/facebook.svg" alt="" class="red-social">
+            <img src="img/redesociales/twitter.svg" alt="" class="red-social">
+            <img src="img/redesociales/youtube.svg" alt="" class="red-social">
+            <img src="img/redesociales/linkedin.svg" alt="" class="red-social">
+        </div>
+        <div class="copyright">
+            <p>© Copyright 1998-2016 Nombre Empresa Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!--#endregion AQUI TERMINA EL FOOTER DE LA PAGINA-->
+
+<script src="js/jquery.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

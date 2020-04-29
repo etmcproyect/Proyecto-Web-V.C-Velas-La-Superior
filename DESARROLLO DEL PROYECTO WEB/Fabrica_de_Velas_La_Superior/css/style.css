@@ -39,24 +39,25 @@ h1{
 
 /*#region CSS PARA OTROS COMPONENTES*/
 
-main{
+/*#region CSS Globales*/
+body{
     background-color: #F5F5F5;
 }
-
-/*#region carousel testimonio*/
 main>.container{
-    max-width: 115.6rem;
     padding: 0;
 
 }
 main>.container>.row{
-    max-width: 115.6rem;
     margin: 0;
 }
 h3{
     font-size: 2.5rem;
     font-weight: bolder;
+    padding: 2.5rem;
 }
+/*#endregion CSS Globales*/
+
+/*#region carousel testimonio*/
 .carousel{
     width: 100%;
 }
@@ -90,7 +91,7 @@ h3{
 /*#endregion*/
 
 /*#region card-testimonio*/
-.slider-testimonios{
+.title-slider-card{
     padding: 8rem 8rem 1rem 8rem;
 }
 .card-testimonio{
@@ -141,6 +142,67 @@ h3{
 }
 
 /*#endregion card-testimonio*/
+
+/*#region carousel producto*/
+
+.carousel-img-producto{
+    width: 73rem;
+    height: 50rem;
+    padding: 0 15rem;
+}
+.carousel-mini-producto{
+    width: 18rem;
+    height: 16rem;
+    padding: 0 .8rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.carousel-descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.producto-titulo-descripcion{
+    width: 100%;
+    font-size: 2rem;
+    text-align: start;
+    font-weight: bolder;
+    padding: 2rem;
+}
+.producto-descripcion{
+    font-size: 1.6rem;
+    text-align: justify;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.carousel-mini-productos{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*#endregion carousel producto*/
+
+/*#region carousel card producto*/
+.producto-card{
+    margin: 0 4.5rem;
+    width: 30rem;
+    text-align: center;
+}
+.producto-card-img{
+    height: 30rem;
+}
+.slider-productos{
+    padding: 2.5rem ;
+}
+h5{
+  font-size: 2rem;
+}
+.producto-card-text,.producto-card-link{
+    font-size: 1.4rem;
+}
+/*#endregion carousel card producto*/
 
 /*#endregion CSS PARA OTROS COMPONENTES*/
 
@@ -313,6 +375,38 @@ footer>.row{
 
     /*#endregion card-testimonio*/
 
+    /*#region carousel de producto*/
+    .carousel-img-producto{
+        width: 100rem;
+        height: 60rem;
+        padding: 0 27rem;
+    }
+    .producto-titulo-descripcion{
+        font-size: 2.8rem;
+        padding: 2rem 6rem;
+    }
+    .producto-descripcion{
+        font-size: 2.05rem;
+        padding: 0 6rem;
+    }
+    /*#endregion carousel de producto*/
+
+    /*#region carousel card producto*/
+    .producto-card{
+        margin: 0 6.2rem;
+        width: 42rem;
+    }
+    .producto-card-img{
+        height: 42rem;
+    }
+    h5{
+        font-size: 2.4rem;
+    }
+    .producto-card-text,.producto-card-link{
+        font-size: 2rem;
+    }
+    /*#endregion carousel card producto*/
+
     /*#region Footer para resolucion de 1920px e*/
     .footer-card{
         padding: 5rem;
@@ -400,6 +494,29 @@ footer>.row{
     }
     /*#endregion*/
 
+    /*#region carousel producto*/
+    .carousel-img-producto{
+        padding: 0;
+        width: 45rem;
+    }
+
+    .carousel-mini-producto{
+        display: none;
+    }
+    /*#endregion carousel producto*/
+
+    /*#region carousel card producto*/
+    .control-nav{
+        display: none;
+    }
+    .producto-card{
+        margin: 0 6.5rem;
+        width: 35rem;
+    }
+    .producto-card-img{
+        height: 35rem;
+    }
+    /*#endregion carousel card producto*/
 }
 @media (max-width: 380px){
     /*#region CSS del Header de la pagina*/
