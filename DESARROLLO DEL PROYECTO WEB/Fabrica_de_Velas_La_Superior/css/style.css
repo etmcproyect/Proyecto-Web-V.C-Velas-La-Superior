@@ -49,32 +49,26 @@ body {
     background: #F5F5F5;
 }
 
-.carousel-item img {
-    height: 500px;
-}
-
- .fondo1 {
+.fondo-mision-vision-index {
     background:url(../img/inicio/Fondo.jpg);
     width: 100%;
     background-size: cover;
+    color: white;
 }
 
-.fondo1 p {
-    color: white;
+.fondo-mision-vision-index p {
     font-size: 1.5rem;
 }
 
-
-
-section article .imagen {
-    width: 500px;
-    height: 250px;
+.imagen-index {
+    width: 100%;
+    height: auto;
     border: 1px solid black;
 }
 
- .imagen1 {
+.imagen-mision, .imagen-vision {
     width: 250px;
-    height: 250px;
+    height: 200px;
     border: 2px solid white;
 }
 
@@ -82,7 +76,7 @@ section article p {
     font-size: 1.5rem;
 }
 
-section article .testimonio1 {
+.imagen-testimonio-index {
 
     width: 250px;
     height:250px;
@@ -90,6 +84,16 @@ section article .testimonio1 {
     border: 3px solid #7e7676;
     /* box-shadow: 5px 5px 0px #bbaeae; */
 }
+
+.mas-informacion-index {
+    font-size: 1.3rem;
+}
+
+.testominio-texto-index {
+    font-size: 1.3rem;
+}
+
+
 
 /*----------------------------------------*/
 /* FINAL de estilos css del index */
@@ -100,29 +104,129 @@ section article .testimonio1 {
 /*----------------------------------------*/
 /* COMIENZO de estilos css del PRODUCTOS */
 /*-----------------------------------------*/
-section article .producto {
+.foto-productos {
     width: 300px;
     height: 300px;
-    margin: 0px auto;
-    display: flex;
     margin-bottom: 30px;
     border: 1px solid #000000  
 }
 
-.producto-mas-info {
+.mas-informacion-productos {
     font-size: 1.5rem;
 }
-
-.paginacion {
-    margin: 0px auto;
-    display: flex;
-    
-}
-
 /*----------------------------------------*/
 /* FINAL de estilos css del PRODUCTOS */
 /*-----------------------------------------*/
 
+
+/*--------------------------*/
+/* COMIENZO de estilos css contactanos */
+/*--------------------------*/
+
+
+.formulario-contactanos {
+    margin: 20px;
+    padding: 20px;
+    margin-top:0px;
+    border: 1px solid #cccccc;
+    margin-bottom: 40px;
+}
+
+.label-contactanos {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.input-contactanos, .textarea-contactanos {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Duda */
+    border: 1px solid #cccccc;
+   
+}
+
+.textarea-contactanos {
+    resize: vertical;  /* para ampliar el textarea both (ambos lados), horizontal */
+    max-height: 300px;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    margin-bottom: 0px;
+    background: #1668c4;
+    color: white;
+    border: none;
+    width: 100px;
+}
+
+input[type="submit"]:hover {
+    background: #4a88f4;
+    cursor: pointer;
+}
+
+
+.mapa-contactanos {
+    border: 1px solid #cccccc;
+    height: 600px;
+    width:100%;
+    margin-bottom: 40px;
+}
+
+.footer-contactanos {
+    background: #F5F5F5;
+}
+
+/*  comienzo codigo footer contactanos*/
+
+.footer-redes-sociales-contactanos{
+    padding: 1rem;
+}
+.footer-redes-sociales-contactanos>img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer-redes-sociales-contactanos>img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.footer-redes-sociales-contactanos{
+    margin-bottom: 40px;
+}
+
+/*--------------------------*/
+/* FINAL de estilos css contactanos */
+/*--------------------------*/
+
+/*--------------------------*/
+/* INICIO de estilo de noticias */
+/*--------------------------*/
+
+.imagen-noticias {
+    width: 100%px;
+    height: auto;
+}
+
+.input-noticias {
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+.button-noticias>img {
+    width: 25px;
+    height: auto;
+}
+
+.publicaciones-noticias>li>a{
+    font-size: 1.5rem;
+}
+
+/*--------------------------*/
+/* FINAL de estilo de noticias */
+/*--------------------------*/
 
 
 /*CSS PARA OTROS COMPONENTES*/
