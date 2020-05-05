@@ -49,6 +49,17 @@ body {
     background: #F5F5F5;
 }
 
+.titulo-banner-index{
+    font-size:5rem;
+    color: skyblue;
+
+}
+
+
+.texto-banner-index {
+    font-size:3rem;
+    color: skyblue;
+}
 .fondo-mision-vision-index {
     background:url(../img/inicio/Fondo.jpg);
     width: 100%;
@@ -71,7 +82,6 @@ body {
     height: 200px;
     border: 2px solid white;
 }
-
 section article p {
     font-size: 1.5rem;
 }
@@ -92,8 +102,6 @@ section article p {
 .testominio-texto-index {
     font-size: 1.3rem;
 }
-
-
 
 /*----------------------------------------*/
 /* FINAL de estilos css del index */
@@ -117,6 +125,7 @@ section article p {
 /*----------------------------------------*/
 /* FINAL de estilos css del PRODUCTOS */
 /*-----------------------------------------*/
+
 
 
 /*--------------------------*/
@@ -170,9 +179,8 @@ input[type="submit"]:hover {
 
 .mapa-contactanos {
     border: 1px solid #cccccc;
-    height: 600px;
+    height: 500px;
     width:100%;
-    margin-bottom: 40px;
 }
 
 .footer-contactanos {
@@ -193,6 +201,8 @@ input[type="submit"]:hover {
     height: 5rem;
 }
 
+/* final codigo de cristian footer */
+
 .footer-redes-sociales-contactanos{
     margin-bottom: 40px;
 }
@@ -206,17 +216,16 @@ input[type="submit"]:hover {
 /*--------------------------*/
 
 .imagen-noticias {
-    width: 100%px;
+    width: 100%;
     height: auto;
 }
 
 .input-noticias {
     font-size: 1.5rem;
-    width: 70%;
-}
 
+}
 .button-noticias>img {
-    width: 25px;
+    width: 22.5px;
     height: auto;
 }
 
@@ -224,9 +233,15 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
 }
 
+.Noticias-Leer-Mas {
+    font-size: 1.5rem;
+}
+
 /*--------------------------*/
 /* FINAL de estilo de noticias */
 /*--------------------------*/
+
+
 
 
 /*CSS PARA OTROS COMPONENTES*/
