@@ -50,6 +50,11 @@ $('#carousel-card-producto').owlCarousel({
             nav:true
         },
         1000:{
+            items:2,
+            nav:true,
+            loop:true
+        },
+        1200:{
             items:3,
             nav:true,
             loop:true
