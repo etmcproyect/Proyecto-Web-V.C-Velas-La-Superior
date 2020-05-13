@@ -144,6 +144,43 @@ section article p {
 }
 /* FINAL de estilos css del PRODUCTOS */
 
+/* COMIENZO de estilos css de PRODUCTO 1 */
+.producto-1 {
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #000000
+}
+
+.producto-1-1 {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #000000
+}
+
+.producto-slider {
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #000000
+}
+
+.paginacion-productos {
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+/* FINAL de estilos css de PRODUCTO 1 */
+
+
 /* COMIENZO de estilos NOTICIAS */
 .imagen-noticias {
     width: 100%;
@@ -178,14 +215,57 @@ section article p {
 .publicaciones-noticias {
     padding: 1.5rem;
 }
-
-
-
 /* FINAL de estilos NOTICIAS */
 
+/* COMIENZO de estilo de NOTICIA 1 */
+.imagen-noticia1 {
+    width: 100%;
+    height: auto;
+}
+
+.input-noticia1 {
+    font-size: 1.5rem;
+}
+
+.button-noticia1>img {
+    width: 22.5px;
+    height: auto;
+}
 
 
+.publicaciones-noticia1>li>a{
+    font-size: 1.5rem;
+}
 
+.imagen-noticia1-publicada {
+    width: 400px;
+    height: auto;
+}
+
+.Noticia1MasNoticias {
+    width: 450px;
+    height: 300px;
+    /* centrar */
+    margin: 0px auto;
+    display: flex;
+
+}
+.Noticias-Leer-Mas {
+    font-size: 1.5rem;
+}
+
+.triangulo-noticia1 {
+    background: url(../img/noticias/flecha-correcta.svg) no-repeat left;
+    background-size: 1rem;
+    list-style-type: none;
+    padding: 1.5rem;
+
+}
+
+.publicaciones-noticia1 {
+    padding: 1.5rem;
+}
+/* FINAL de estilo de NOTICIA 1 */
 
 /* COMIENZO de estilos css CONTACTANOS */
 
@@ -342,7 +422,6 @@ footer p, footer span {
         border:none;
     }
 }
-
 /* #endregion resolucion 576px */
 
 
