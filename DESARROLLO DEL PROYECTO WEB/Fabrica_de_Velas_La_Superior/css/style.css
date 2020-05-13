@@ -1,19 +1,25 @@
+/*--------------------------*/
+/*CSS del Header de la pagina comienzo*/
+/*--------------------------*/
 
-/*CSS del Header de la pagina*/
 header {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: rgba(0,27,133,0.83);
 }
 h1{
+    -webkit-text-stroke: 0.6px white;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 3rem;
-}
-.nombre-empresa{
-    -webkit-text-stroke: 0.6px white;
     color: red;
+    font-size: 2.2vw;
+    margin:0;
+    padding-left:1rem;
 }
+.nombre-empresa:hover{
+    text-decoration: none;
+}
+
 .logo-img{
     width: 5rem;
     height: 5rem;
@@ -27,6 +33,7 @@ h1{
 .nav-link{
     color: white !important;
     font-size: 1.8rem;
+    font-weight: bolder;
     font-family: "Open sans", sans-serif;
     text-align: center;
 }
@@ -35,15 +42,33 @@ h1{
     height: 3.5rem;
     background: url("../img/menu/menu-white.svg") no-repeat no-repeat;
 }
-/*CSS del Header de la pagina*/
 
-/*CSS PARA OTROS COMPONENTES*/
+/*#region wordpress */
+
+.active{
+    border-bottom: 2px solid white;
+}
+.active:hover{
+    border-bottom: 2px solid #FFF77D;
+}
+
+/*#endregion */
+
+
+.nav-link:hover {
+    color: #FFF77D !important;
+    /* border-bottom: 2px solid #FFF77D; */
+}
+
+
+/*--------------------------*/
+/*CSS del Header de la pagina final*/
+/*--------------------------*/
 
 
 
-/*----------------------------------------*/
 /* COMIENZO de estilos css del index */
-/*-----------------------------------------*/
+
 
 body {
     background: #F5F5F5;
@@ -61,7 +86,7 @@ body {
     color: skyblue;
 }
 .fondo-mision-vision-index {
-    background:url(../img/inicio/Fondo.jpg);
+    background:url(https://images.unsplash.com/photo-1587165854791-827e2b4c753a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
     width: 100%;
     background-size: cover;
     color: white;
@@ -78,8 +103,8 @@ body {
 }
 
 .imagen-mision, .imagen-vision {
-    width: 250px;
-    height: 200px;
+    width: 100%;
+    height: 250px;
     border: 2px solid white;
 }
 section article p {
@@ -102,16 +127,11 @@ section article p {
 .testominio-texto-index {
     font-size: 1.3rem;
 }
-
-/*----------------------------------------*/
 /* FINAL de estilos css del index */
-/*-----------------------------------------*/
 
 
 
-/*----------------------------------------*/
 /* COMIENZO de estilos css del PRODUCTOS */
-/*-----------------------------------------*/
 .foto-productos {
     width: 300px;
     height: 300px;
@@ -122,16 +142,52 @@ section article p {
 .mas-informacion-productos {
     font-size: 1.5rem;
 }
-/*----------------------------------------*/
 /* FINAL de estilos css del PRODUCTOS */
-/*-----------------------------------------*/
+
+/* COMIENZO de estilos NOTICIAS */
+.imagen-noticias {
+    width: 100%;
+    height: auto;
+}
+
+.input-noticias {
+    font-size: 1.5rem;
+
+}
+.button-noticias>img {
+    width: 22.5px;
+    height: auto;
+}
+
+.publicaciones-noticias>li>a{
+    font-size: 1.5rem;
+}
+
+.Noticias-Leer-Mas {
+    font-size: 1.5rem;
+}
+
+.triangulo-noticias {
+    background: url(../img/noticias/flecha-correcta.svg) no-repeat left;
+    background-size: 1rem;
+    list-style-type: none;
+    padding: 1.5rem;
+
+}
+
+.publicaciones-noticias {
+    padding: 1.5rem;
+}
 
 
 
-/*--------------------------*/
-/* COMIENZO de estilos css contactanos */
-/*--------------------------*/
+/* FINAL de estilos NOTICIAS */
 
+
+
+
+
+/* COMIENZO de estilos css CONTACTANOS */
 
 .formulario-contactanos {
     margin: 20px;
@@ -187,7 +243,7 @@ input[type="submit"]:hover {
     background: #F5F5F5;
 }
 
-/*  comienzo codigo footer contactanos*/
+/* footer contactanos*/
 
 .footer-redes-sociales-contactanos{
     padding: 1rem;
@@ -201,52 +257,20 @@ input[type="submit"]:hover {
     height: 5rem;
 }
 
-/* final codigo de cristian footer */
+/* redes Sociales footer */
 
 .footer-redes-sociales-contactanos{
     margin-bottom: 40px;
 }
 
-/*--------------------------*/
 /* FINAL de estilos css contactanos */
-/*--------------------------*/
 
-/*--------------------------*/
-/* INICIO de estilo de noticias */
-/*--------------------------*/
 
-.imagen-noticias {
-    width: 100%;
-    height: auto;
-}
 
-.input-noticias {
-    font-size: 1.5rem;
-
-}
-.button-noticias>img {
-    width: 22.5px;
-    height: auto;
-}
-
-.publicaciones-noticias>li>a{
-    font-size: 1.5rem;
-}
-
-.Noticias-Leer-Mas {
-    font-size: 1.5rem;
-}
 
 /*--------------------------*/
-/* FINAL de estilo de noticias */
+/* CSS del footer comienzo */
 /*--------------------------*/
-
-
-
-
-/*CSS PARA OTROS COMPONENTES*/
-
-/*Footer Para Resolucion de 1360 1280 e*/
 footer{
     background-color: rgba(0,27,133,0.83);
 }
@@ -277,8 +301,6 @@ footer p, footer span {
     color: white;
 }
 
-
-
 .footer-redes-sociales{
     padding: 1rem;
 
@@ -307,67 +329,38 @@ footer p, footer span {
     font-size: 1.2rem;
 }
 
+/*--------------------------*/
+/* CSS del footer final*/
+/*--------------------------*/
 
 
-/*Footer Para Resolucion de 1360 1280 e*/
 
-/*Para que la pagina sea Resposive */
-@media (min-width: 1920px) {
-    /*CSS del Header de la pagina*/
+/* #region resolucion 576px */
+
+@media (max-width: 1199px){
+    .active{
+        border:none;
+    }
+}
+
+/* #endregion resolucion 576px */
+
+
+
+/* #region resolucion 576px */
+
+@media (max-width: 576px){
+
+/*#region header */
     header{
-        padding-left: 6rem;
-        padding-right: 6rem;
+        padding: 1rem;
     }
     h1{
-        font-size: 4rem;
+        -webkit-text-stroke: 0.08px white;
+        font-size: 1.2rem;
     }
-    .logo-img{
-        width: 6.5rem;
-        height: 6.5rem;
-    }
-
-    .nav-link{
-        color: white;
-        font-size: 2rem;
-    }
-    /*CSS del Header de la pagina*/
-
-    /*Footer para resolucion de 1920px e*/
-  
-}
-@media (max-width: 480px) {
-    /*CSS del Header de la pagina*/
-    header{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
-
-    .navbar{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-    }
-    h1{
-        font-family: sans-serif;
-        font-size: 2rem;
-    }
-    .nombre-empresa{
-        -webkit-text-stroke: 0.1px white;
-        color: red;
-    }
-    .logo-img{
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-    /*CSS del Header de la pagina*/
-   
+/*#endregion  */
 
 }
-@media (max-width: 380px){
-    /*CSS del Header de la pagina*/
-    h1{
-        font-family: sans-serif;
-        font-size: 1.5rem;
-    }
-    /*CSS del Header de la pagina*/
-}
-/*Para que la pagina sea Resposive */
+
+/* #endregion resolucion 576px */
