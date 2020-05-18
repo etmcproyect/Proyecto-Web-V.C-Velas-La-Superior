@@ -8,7 +8,7 @@ header {
     background-color: rgba(0,27,133,0.83);
 }
 h1{
-    -webkit-text-stroke: 0.6px white;
+    -webkit-text-stroke: 0.5px white;
     font-family: sans-serif;
     font-weight: bold;
     color: red;
@@ -129,8 +129,6 @@ section article p {
 }
 /* FINAL de estilos css del index */
 
-
-
 /* COMIENZO de estilos css del PRODUCTOS */
 .foto-productos {
     width: 300px;
@@ -205,7 +203,7 @@ section article p {
 }
 
 .triangulo-noticias {
-    background: url(../img/noticias/flecha-correcta.svg) no-repeat left;
+    background: url(../img/iconos/arrow/flecha-correcta.svg) no-repeat left;
     background-size: 1rem;
     list-style-type: none;
     padding: 1.5rem;
@@ -255,7 +253,7 @@ section article p {
 }
 
 .triangulo-noticia1 {
-    background: url(../img/noticias/flecha-correcta.svg) no-repeat left;
+    background: url(../img/iconos/arrow/flecha-correcta.svg) no-repeat left;
     background-size: 1rem;
     list-style-type: none;
     padding: 1.5rem;
@@ -266,6 +264,57 @@ section article p {
     padding: 1.5rem;
 }
 /* FINAL de estilo de NOTICIA 1 */
+
+/* #region producto */
+
+.nombre-producto{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.carousel-img-producto{
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+    width: 100%;
+    height: 60rem;
+}
+.carousel-control-prev-icon{
+    background: url(../img/iconos/arrow/Left-arrow.svg) no-repeat left;
+    height: 4rem;
+
+}
+.carousel-control-next-icon{
+    background: url(../img/iconos/arrow/Right-arrow.svg) no-repeat right;
+    height: 4rem;
+
+}
+.carousel-mini-productos{
+    display: flex;
+    justify-content: center;
+}
+.carousel-mini-producto{
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.carousel-descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.producto-titulo-descripcion{
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+.producto-descripcion{
+    font-size: 1.6rem;
+}
+
+/* #endregion producto */
+
 
 /* COMIENZO de estilos css CONTACTANOS */
 
@@ -415,16 +464,26 @@ footer p, footer span {
 
 
 
-/* #region resolucion 576px */
+/* #region resolucion 1199px */
 
 @media (max-width: 1199px){
+    h1{
+        -webkit-text-stroke: 0.08px white;
+    }
     .active{
         border:none;
     }
+    .carousel-img-producto{
+        margin: 0 auto;
+        width: 100%;
+        height: 50rem;
+    }
+    .carousel-mini-producto{
+        width: 10rem;
+        height: 10rem;
+    }
 }
-/* #endregion resolucion 576px */
-
-
+/* #endregion resolucion 1199px */
 
 /* #region resolucion 576px */
 
@@ -436,8 +495,21 @@ footer p, footer span {
     }
     h1{
         -webkit-text-stroke: 0.08px white;
-        font-size: 1.2rem;
+        font-size: 3.6vw;
     }
+    .carousel-img-producto{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .carousel-mini-productos{
+        display: none;
+    }
+
+    .nombre-producto {
+        text-align: center;
+    }
+  
 /*#endregion  */
 
 }
