@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contactanos | La Superior</title>
+    <link rel="shortcut icon" href="img/logo/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--HEADER Y MENU DE LA PAGINA WEB CON RESPONSIVE EN RESOLUCIONES DE 1920px 1360px 1280px 1080px 480px y 380px-->
+
+    <!--#region menu del inicio-->
+    <header>
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <a href="#" class="d-flex align-items-center">
+              <img class="logo-img" src="img/logo/logo-final-sinmargen.png" alt="logo de la empresa">
+            </a>
+            <a href="#" class="d-flex justify-content-center align-items-end nombre-empresa">
+              <h1>V & C Fábrica de velas "La Superior"</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#firstNavbar">
+              <div class="icon-menu">
+  
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="firstNavbar">
+                <ul class="navbar-nav ml-auto">
+                      <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                      <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                      <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+                      <li class="nav-item"><a class="nav-link" href="index.html">Testimonios</a></li>
+                      <li class="nav-item"><a class="nav-link active" href="contactanos.html">Contactanos</a></li>
+                </ul>
+            </div>
+        </nav>
+     </header>
+    <!--#endregion menu del inicio-->
+
+    <!--AQUI TERMINA EL HEADER-->
+
+
+
+    <!--AQUI INICIA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
+
+   <main>
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="my-5" style="font-weight: bolder; font-size: 2.4rem ;">Contactanos</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!--#region CONTACTANOS-->
+            <div class="col-lg-6 ">
+                <form class="formulario-contactanos mb-5">
+                    <label class="label-contactanos" for="nombre">Nombres</label>
+                    <input class="input-contactanos" type="text" id="nombre" placeholder="Escribe sus nombres">
+                    <label class="label-contactanos" for="apellido">Apellidos</label>
+                    <input class="input-contactanos" type="text" id="apellido" placeholder="Escriba sus apellidos">
+                    <label class="label-contactanos" for="telefono">Telefono</label>
+                    <input class="input-contactanos" type="text" id="telefono" placeholder="Escriba su telefono">
+                    <label class="label-contactanos" for="email">Correo</label>
+                    <input class="input-contactanos" type="email" id="email" placeholder="Escriba su correo">
+                    <label class="label-contactanos" for="preguntar">Preguntenos cualquier cosa</label>
+                    <textarea class="textarea-contactanos" class="" id="preguntar" placeholder="Escriba sus preguntas"></textarea>
+                    <input class="input-contactanos mx-auto d-block" type="submit"  value="ENVIAR">
+                </form>
+            </div>
+            <!--#endregion CONTACTANOS-->
+
+            <!--#region UBICANOS-->
+            <div class="col-lg-6 my-auto mb-5 d-lg-block d-md-none d-sm-none d-none">
+                <img  class="img-fluid" src="https://images.unsplash.com/photo-1582557072418-e968d7f5c2cf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="imagen">
+            </div>
+            <!--#endregion UBICANOS-->
+          </div>
+    </section>
+   </main>
+
+    <!--AQUI TERMINA EL CONTENIDO PRINCIPAL DE LA PAGINA-->
+
+    <!--AQUI COMIENZA EL FOOTER DE LA PAGINA WEB-->
+
+    <!--#region pie de pagina-->
+    <footer class="footer-contactanos">
+        <div class="footer-redes-sociales-contactanos d-flex justify-content-center">
+            <img src="img/redesociales/facebook.svg" alt="" class="red-social">
+            <img src="img/redesociales/twitter.svg" alt="" class="red-social">
+            <img src="img/redesociales/youtube.svg" alt="" class="red-social">
+            <img src="img/redesociales/linkedin.svg" alt="" class="red-social">
+        </div>
+        <div class="copyright">
+            <p>© Copyright 1998-2016 Nombre Empresa Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <!--#endregion pie de pagina-->
+    
+    <!--AQUI TERMINA EL FOOTER DE LA PAGINA-->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/popper.js"></script>
+</body>
+</html>
