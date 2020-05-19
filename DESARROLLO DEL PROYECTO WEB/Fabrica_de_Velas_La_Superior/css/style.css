@@ -1,19 +1,25 @@
+/*--------------------------*/
+/*CSS del Header de la pagina comienzo*/
+/*--------------------------*/
 
-/*#region CSS del Header de la pagina*/
 header {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
     background-color: rgba(0,27,133,0.83);
 }
 h1{
+    -webkit-text-stroke: 0.5px white;
     font-family: sans-serif;
     font-weight: bold;
-    font-size: 3rem;
-}
-.nombre-empresa{
-    -webkit-text-stroke: 0.6px white;
     color: red;
+    font-size: 2.2vw;
+    margin:0;
+    padding-left:1rem;
 }
+.nombre-empresa:hover{
+    text-decoration: none;
+}
+
 .logo-img{
     width: 5rem;
     height: 5rem;
@@ -27,6 +33,7 @@ h1{
 .nav-link{
     color: white !important;
     font-size: 1.8rem;
+    font-weight: bolder;
     font-family: "Open sans", sans-serif;
     text-align: center;
 }
@@ -35,335 +42,397 @@ h1{
     height: 3.5rem;
     background: url("../img/menu/menu-white.svg") no-repeat no-repeat;
 }
-/*#endregion CSS del Header de la pagina*/
 
-/*#region CSS PARA OTROS COMPONENTES*/
+/*#region wordpress */
 
-/*#region CSS Globales*/
-body{
-    background-color: #F5F5F5;
+.active{
+    border-bottom: 2px solid white;
 }
-main>.container{
-    padding: 0;
+.active:hover{
+    border-bottom: 2px solid #FFF77D;
+}
+
+/*#endregion */
+
+
+.nav-link:hover {
+    color: #FFF77D !important;
+    /* border-bottom: 2px solid #FFF77D; */
+}
+
+
+/*--------------------------*/
+/*CSS del Header de la pagina final*/
+/*--------------------------*/
+
+
+
+/* COMIENZO de estilos css del index */
+
+
+body {
+    background: #F5F5F5;
+}
+
+.titulo-banner-index{
+    font-size:5rem;
+    color: skyblue;
 
 }
-main>.container>.row{
-    margin: 0;
-}
-h3{
-    font-size: 2.5rem;
-    font-weight: bolder;
-    padding: 2.5rem;
-}
-/*#endregion CSS Globales*/
 
-/*#region carousel testimonio*/
-.carousel{
+
+.texto-banner-index {
+    font-size:3rem;
+    color: skyblue;
+}
+.fondo-mision-vision-index {
+    background:url(https://images.unsplash.com/photo-1587165854791-827e2b4c753a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);
     width: 100%;
+    background-size: cover;
+    color: white;
 }
-.carousel-img{
+
+.fondo-mision-vision-index p {
+    font-size: 1.5rem;
+}
+
+.imagen-index {
     width: 100%;
-    height: 51rem;
-}
-.carousel-control-next-icon,
-.carousel-control-prev-icon{
-    width: 3rem;
-    height: 4rem;
-}
-.carousel-control-next-icon{
-    background-image: url("../img/iconos/arrow/Right-arrow.svg");
-}
-.carousel-control-prev-icon{
-    background-image: url("../img/iconos/arrow/Left-arrow.svg");
+    height: auto;
+    border: 1px solid black;
 }
 
-.carousel-mini{
-    width: 9rem;
-    height: 8rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.testimonio-descripcion{
-    font-size: 1.8rem;
-    padding-right: 2rem;
-    padding-left: 2rem;
-}
-/*#endregion*/
-
-/*#region card-testimonio*/
-.title-slider-card{
-    padding: 8rem 8rem 1rem 8rem;
-}
-.card-testimonio{
-    padding: 4.5rem 5rem 4.5rem 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-testimonio{
-    width: 22.4rem;
-    height: 22.4rem;
-    border-radius: 100%;
-}
-.card-titulo-testimonio{
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: center;
-}
-.card-descripcion-testimonio{
-    font-size: 1.4rem;
-    padding: 1rem 1rem 1rem 1rem;
-    text-align: justify;
-}
-.enlace-testimonio{
-    font-weight: bolder;
-    text-align: end;
-}
-.control-nav{
-    position: absolute;
-    top: 40%;
-    width: 115.6rem;
-    z-index: 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.control-prev{
-    background: url("../img/iconos/arrow/Left-arrow.svg") no-repeat;
-    background-size: contain;
-}
-.control-next{
-    background: url("../img/iconos/arrow/Right-arrow.svg") no-repeat;
-    background-size: contain;
-}
-.control-prev,.control-next{
-    width: 3rem;
-    height: 5rem;
-}
-
-/*#endregion card-testimonio*/
-
-/*#region carousel producto*/
-
-.carousel-img-producto{
-    width: 73rem;
-    height: 50rem;
-    padding: 0 15rem;
-}
-.carousel-mini-producto{
-    width: 18rem;
-    height: 16rem;
-    padding: 0 .8rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-.carousel-descripcion-producto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.producto-titulo-descripcion{
+.imagen-mision, .imagen-vision {
     width: 100%;
-    font-size: 2rem;
-    text-align: start;
-    font-weight: bolder;
-    padding: 2rem;
+    height: 250px;
+    border: 2px solid white;
 }
-.producto-descripcion{
-    font-size: 1.6rem;
-    text-align: justify;
-    padding-right: 2rem;
-    padding-left: 2rem;
+section article p {
+    font-size: 1.5rem;
 }
-.carousel-mini-productos{
-    padding: 0;
+
+.imagen-testimonio-index {
+
+    width: 250px;
+    height:250px;
+    border-radius: 50%;
+    border: 3px solid #7e7676;
+    /* box-shadow: 5px 5px 0px #bbaeae; */
+}
+
+.mas-informacion-index {
+    font-size: 1.3rem;
+}
+
+.testominio-texto-index {
+    font-size: 1.3rem;
+}
+/* FINAL de estilos css del index */
+
+/* COMIENZO de estilos css del PRODUCTOS */
+.foto-productos {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 30px;
+    border: 1px solid #000000  
+}
+
+.mas-informacion-productos {
+    font-size: 1.5rem;
+}
+/* FINAL de estilos css del PRODUCTOS */
+
+/* COMIENZO de estilos css de PRODUCTO 1 */
+.producto-1 {
+    width: 400px;
+    height: 400px;
+    margin: 0px auto;
     display: flex;
-    justify-content: center;
-
+    margin-bottom: 30px;
+    border: 1px solid #000000
 }
 
-/*#endregion carousel producto*/
-
-/*#region carousel card producto*/
-.producto-card{
-    margin: 0 4.5rem;
-    width: 30rem;
-    text-align: center;
-}
-.producto-card-img{
-    height: 30rem;
-}
-.slider-productos{
-    padding: 2.5rem ;
-}
-h5{
-  font-size: 2rem;
-}
-.producto-card-text,.producto-card-link{
-    font-size: 1.4rem;
-}
-/*#endregion carousel card producto*/
-
-/*#region componentes noticia*/
-
-.titulo-noticia>h2{
-    font-size: 3rem;
-}
-.texto-noticia p{
-    font-size: 1.4rem;
-    text-align: justify;
-}
-.texto-noticia h4{
-    font-size: 1.8rem;
-    font-weight: bolder;
-}
-.texto-noticia{
-    padding: 2rem;
-}
-.img-noticia-sec{
-    width: 100%;
+.producto-1-1 {
+    width: 150px;
+    height: 150px;
+    margin: 0px auto;
     display: flex;
-    justify-content: center;
+    margin-bottom: 30px;
+    border: 1px solid #000000
 }
-.img-noticia-sec>img{
-    width: 40%;
+
+.producto-slider {
+    width: 300px;
+    height: 300px;
+    margin: 0px auto;
+    display: flex;
+    margin-bottom: 30px;
+    border: 1px solid #000000
 }
+
+.paginacion-productos {
+    margin: 0px auto;
+    display: flex;
+    
+}
+
+/* FINAL de estilos css de PRODUCTO 1 */
+
+
+/* COMIENZO de estilos NOTICIAS */
 .imagen-noticias {
     width: 100%;
     height: auto;
 }
 
-.publi-re a{
-    font-size: 1.4rem;
+.input-noticias {
+    font-size: 1.5rem;
+
 }
-.publi-re>h4{
-    font-size: 2rem;
-    padding: 2.5rem;
+.button-noticias>img {
+    width: 22.5px;
+    height: auto;
 }
 
-.input-noticias{
-    width: 80% !important;
-    border-radius: 0.8rem;
-    height: 3.2rem;
-    font-size: 1.4rem;
-}
-.btn-noticias{
-    margin: 0 1rem;
-    width: 3.2rem !important;
-    height: 3.2rem;
-    border: none;
-    background: url("../img/iconos/search.svg");
-}
-.publi-re img{
-    width: 3.2rem;
-    height: 3.2rem;
-}
-.formulario-noticias{
-    padding: 2.5rem 2.5rem 0 2.5rem;
+.publicaciones-noticias>li>a{
+    font-size: 1.5rem;
 }
 
-.card-noticia{
-    width: 47rem;
-    height: 29rem;
-    margin: 5.5rem;
+.Noticias-Leer-Mas {
+    font-size: 1.5rem;
 }
-.card-noticia-img{
+
+.triangulo-noticias {
+    background: url(../img/iconos/arrow/flecha-correcta.svg) no-repeat left;
+    background-size: 1rem;
+    list-style-type: none;
+    padding: 1.5rem;
+
+}
+
+.publicaciones-noticias {
+    padding: 1.5rem;
+}
+/* FINAL de estilos NOTICIAS */
+
+/* COMIENZO de estilo de NOTICIA 1 */
+.imagen-noticia1 {
     width: 100%;
-    height: 100%;
+    height: auto;
 }
-.card-noticia-img>img{
-    width: 100%;
-    height: 100%;
+
+.input-noticia1 {
+    font-size: 1.5rem;
+}
+
+.button-noticia1>img {
+    width: 22.5px;
+    height: auto;
+}
+
+
+.publicaciones-noticia1>li>a{
+    font-size: 1.5rem;
+}
+
+.imagen-noticia1-publicada {
+    width: 400px;
+    height: auto;
+}
+
+.Noticia1MasNoticias {
+    width: 450px;
+    height: 300px;
+    /* centrar */
+    margin: 0px auto;
+    display: flex;
 
 }
-.card-noticia-descripcion{
+.Noticias-Leer-Mas {
+    font-size: 1.5rem;
+}
+
+.triangulo-noticia1 {
+    background: url(../img/iconos/arrow/flecha-correcta.svg) no-repeat left;
+    background-size: 1rem;
+    list-style-type: none;
+    padding: 1.5rem;
+
+}
+
+.publicaciones-noticia1 {
+    padding: 1.5rem;
+}
+/* FINAL de estilo de NOTICIA 1 */
+
+/* #region producto */
+
+.nombre-producto{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.carousel-img-producto{
+    padding-left: 8.5rem;
+    padding-right: 8.5rem;
+    width: 100%;
+    height: 60rem;
+}
+.carousel-control-prev-icon{
+    background: url(../img/iconos/arrow/Left-arrow.svg) no-repeat left;
+    height: 4rem;
+
+}
+.carousel-control-next-icon{
+    background: url(../img/iconos/arrow/Right-arrow.svg) no-repeat right;
+    height: 4rem;
+
+}
+.carousel-mini-productos{
+    display: flex;
+    justify-content: center;
+}
+.carousel-mini-producto{
+    padding: 1rem;
+    width: 15rem;
+    height: 15rem;
+}
+
+.carousel-descripcion-producto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.producto-titulo-descripcion{
+    font-size: 2.4rem;
+    font-weight: bolder;
+}
+.producto-descripcion{
+    font-size: 1.6rem;
+}
+
+/* #endregion producto */
+
+
+/* COMIENZO de estilos css CONTACTANOS */
+
+.formulario-contactanos {
+    margin: 20px;
+    padding: 20px;
+    margin-top:0px;
+    border: 1px solid #cccccc;
+    margin-bottom: 40px;
+}
+
+.label-contactanos {
+    display: block;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+.input-contactanos, .textarea-contactanos {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Duda */
+    border: 1px solid #cccccc;
+   
+}
+
+.textarea-contactanos {
+    resize: vertical;  /* para ampliar el textarea both (ambos lados), horizontal */
+    max-height: 300px;
+    min-height: 100px;
+}
+
+input[type="submit"] {
+    margin-bottom: 0px;
+    background: #1668c4;
     color: white;
-    background: rgba(0,0,0,0.95);
-    position: relative;
-    bottom: 38%;
-    z-index: 10;
+    border: none;
+    width: 100px;
 }
-.card-noticia-titulo{
-    padding: 1rem 2rem 0 2rem;
-    font-size: 1.8rem;
-}
-.card-noticia-text{
-    margin: 0;
-    padding: 0 1rem 1rem 2rem;
-    font-size: 1.4rem;
+
+input[type="submit"]:hover {
+    background: #4a88f4;
+    cursor: pointer;
 }
 
 
-/*#endregion componentes noticia*/
+.mapa-contactanos {
+    border: 1px solid #cccccc;
+    height: 500px;
+    width:100%;
+}
 
-/*#endregion CSS PARA OTROS COMPONENTES*/
+.footer-contactanos {
+    background: #F5F5F5;
+}
 
-/*#region Footer Para Resolucion de 1360 1280 e*/
+/* footer contactanos*/
+
+.footer-redes-sociales-contactanos{
+    padding: 1rem;
+}
+.footer-redes-sociales-contactanos>img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.footer-redes-sociales-contactanos>img{
+    width: 5rem;
+    height: 5rem;
+}
+
+/* redes Sociales footer */
+
+.footer-redes-sociales-contactanos{
+    margin-bottom: 40px;
+}
+
+/* FINAL de estilos css contactanos */
+
+
+
+
+/*--------------------------*/
+/* CSS del footer comienzo */
+/*--------------------------*/
 footer{
     background-color: rgba(0,27,133,0.83);
 }
-footer>.row{
-    margin: 0;
+
+iframe {
+    width: 100%;
+    height: 280px;
 }
-.footer-card{
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+
+.imagen-footer-noticia {
+    width: 100%;
+    height: 280px;
 }
-.footer-card>h5{
-    padding-bottom: 1.5rem;
+
+.footer-item-titulo {
     font-size: 2rem;
     color: white;
 }
-.footer-card>p{
-    margin: 0.5rem;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: white;
-}
-.footer-card>p>span{
+
+
+footer p, footer span {
     font-size: 1.5rem;
     color: white;
 }
 
-.footer-map{
-    padding-top: 4rem;
-}
-.footer-map>iframe{
-    width: 45rem;
-    height: 32rem;
-}
-
-.footer-noticia{
-    padding-top: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-}
-.footer-noticia>div{
-    margin: 0;
-
-}
-.footer-noticia>h5{
-    padding-bottom: 1rem;
-    font-size: 2rem;
-    color: white;
-}
-.footer-noticia>div>p{
-    padding: 0;
+.leer-mas-footer {
     font-size: 1.5rem;
     color: white;
-}
-.footer-noticia>div>div>a{
-    color: white;
-    font-size: 1.5rem;
-}
-.footer-noticia-img{
-    width: 45rem;
-    height: 30rem;
 }
 
 .footer-redes-sociales{
     padding: 1rem;
+
 }
 .footer-redes-sociales>img{
     margin-left: 1rem;
@@ -373,6 +442,7 @@ footer>.row{
     width: 5rem;
     height: 5rem;
 }
+
 
 .copyright{
     margin-top: 1rem;
@@ -387,308 +457,60 @@ footer>.row{
     color: white;
     font-size: 1.2rem;
 }
-/*#endregion Footer Para Resolucion de 1360 1280 e*/
 
-/*#region Para que la pagina sea Resposive */
-@media (min-width: 1920px) {
-    /*#region CSS del Header de la pagina*/
-    header{
-        padding-left: 6rem;
-        padding-right: 6rem;
-    }
+/*--------------------------*/
+/* CSS del footer final*/
+/*--------------------------*/
+
+
+
+/* #region resolucion 1199px */
+
+@media (max-width: 1199px){
     h1{
-        font-size: 4rem;
+        -webkit-text-stroke: 0.08px white;
     }
-    .logo-img{
-        width: 6.5rem;
-        height: 6.5rem;
+    .active{
+        border:none;
     }
-
-    .nav-link{
-        color: white;
-        font-size: 2rem;
-    }
-    /*#endregion CSS del Header de la pagina*/
-
-    /*#region CSS PARA OTROS COMPONENTES*/
-
-    main>.container{
-        max-width: 164rem;
-    }
-    main>.container>.row{
-        padding: 0 4rem;
-        max-width: 164rem;
-    }
-    h3{
-        font-size: 3rem;
-        font-weight: bolder;
-    }
-    .carousel-img{
-        width: 100%;
-        height: 60rem;
-    }
-    .carousel-mini{
-        width: 12rem;
-        height: 10rem;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-    }
-    .testimonio-descripcion{
-        font-size: 2rem;
-    }
-
-    /*#endregion CSS PARA OTROS COMPONENTES*/
-
-    /*#region card-testimonio*/
-    .card-testimonio{
-        padding: 4.5rem 5rem 4.5rem 5rem;
-    }
-    .card-img-testimonio{
-        padding: 0 3rem 0 2rem !important;
-    }
-    .img-testimonio{
-        height: 26rem;
-    }
-    .card-titulo-testimonio{
-        font-size: 2.6rem;
-    }
-    .card-descripcion-testimonio{
-        font-size: 1.8rem;
-        padding: 1rem 2.5rem 0rem 2.5rem;
-    }
-    .enlace-testimonio{
-        padding-right: 2.5rem;
-    }
-    .enlace-testimonio>a{
-        font-size: 1.4rem;
-    }
-    .control-nav{
-        width: 164rem;
-    }
-
-    /*#endregion card-testimonio*/
-
-    /*#region carousel de producto*/
     .carousel-img-producto{
-        width: 100rem;
-        height: 60rem;
-        padding: 0 27rem;
-    }
-    .producto-titulo-descripcion{
-        font-size: 2.8rem;
-        padding: 2rem 6rem;
-    }
-    .producto-descripcion{
-        font-size: 2.05rem;
-        padding: 0 6rem;
-    }
-    /*#endregion carousel de producto*/
-
-    /*#region carousel card producto*/
-    .producto-card{
-        margin: 0 6.2rem;
-        width: 42rem;
-    }
-    .producto-card-img{
-        height: 42rem;
-    }
-    h5{
-        font-size: 2.4rem;
-    }
-    .producto-card-text,.producto-card-link{
-        font-size: 2rem;
-    }
-    /*#endregion carousel card producto*/
-
-    /*#region card noticia*/
-
-    .card-noticia{
-        width: 67rem;
-        height: 41rem;
-        margin: 7rem;
-    }
-    .card-noticia-descripcion{
-        bottom: 32%;
-    }
-    .card-noticia-titulo{
-        padding: 1rem 2rem 0 2rem;
-        font-size: 2rem;
-    }
-    .card-noticia-text{
-        font-size: 1.8rem;
-    }
-
-    /*#endregion card noticia*/
-
-    /*#region Footer para resolucion de 1920px e*/
-    .footer-card{
-        padding: 5rem;
-    }
-    .footer-card>h5{
-        padding-bottom: 1.5rem;
-        font-size: 3rem;
-    }
-    .footer-card>p{
-        margin: 0.5rem;
-        font-size: 2.5rem;
-    }
-    .footer-card>p>span{
-        font-size: 2rem;
-        color: white;
-    }
-
-
-    .footer-map>iframe{
-        width: 55rem;
-        height: 40rem;
-    }
-
-    .footer-noticia{
-        padding-top: 4rem;
-        padding-left: 3rem;
-    }
-    .footer-noticia>h5{
-        color: white;
-    }
-    .footer-noticia>.row{
-        width: 55rem;
-    }
-    .footer-noticia>.row>p{
-        font-size: 2rem;
-    }
-    .footer-noticia>.row>div>a{
-        font-size: 2rem;
-    }
-    .footer-noticia-img{
-        width: 55rem;
-        height: 35rem;
-    }
-    .footer-noticia>div{
-        width: 55rem;
-    }
-
-    .footer-redes-sociales>img{
-        width: 6.5rem;
-        height: 6.5rem;
-    }
-
-    .copyright>p{
-
-        font-size: 1.6rem;
-    }
-    /*#endregion*/
-}
-
-/*#region medida de 1024*/
-
-@media (max-width: 1024px) {
-
-
-    h1{
-        font-size: 2.4rem;
-    }
-    /*#region footer */
-    .footer-card{
-        align-items: center;
-    }
-    .footer-noticia-img {
-        width: 60%;
-        height: 40rem;
-    }
-    .footer-noticia{
-        align-items: center;
-    }
-    .footer-noticia>div{
-        width: 60%;
-    }
-
-    /*#endregion*/
-}
-
-/*#endregion*/
-
-/*#region medida de 768*/
-
-@media (max-width: 768px) {
-    /*#region footer */
-    .footer-card{
-        align-items: center;
-    }
-    .footer-noticia-img {
+        margin: 0 auto;
         width: 100%;
-        height: 40rem;
+        height: 50rem;
     }
-    .footer-noticia>div{
-        width: 100%;
+    .carousel-mini-producto{
+        width: 10rem;
+        height: 10rem;
     }
-
-    /*#endregion*/
 }
+/* #endregion resolucion 1199px */
 
-/*#endregion*/
+/* #region resolucion 576px */
 
-/*#region medida de 576*/
+@media (max-width: 576px){
 
-@media (max-width: 576px) {
-
+/*#region header */
     header{
         padding: 1rem;
     }
     h1{
-        font-size: 1.8rem;
+        -webkit-text-stroke: 0.08px white;
+        font-size: 3.6vw;
     }
-
-    /*#region footer */
-    .footer-card{
-        align-items: center;
-    }
-    .footer-noticia-img {
-        width: 100%;
-        height: 40rem;
-    }
-    .footer-noticia>div{
+    .carousel-img-producto{
+        margin: 0;
+        padding: 0;
         width: 100%;
     }
-
-    /*#endregion*/
-}
-
-/*#endregion*/
-
-@media (max-width: 480px) {
-    /*#region CSS del Header de la pagina*/
-    header{
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    .carousel-mini-productos{
+        display: none;
     }
 
-    .navbar{
-        padding-top: 1rem;
-        padding-bottom: 1rem;
+    .nombre-producto {
+        text-align: center;
     }
-    h1{
-        font-family: sans-serif;
-        font-size: 2rem;
-    }
-    .nombre-empresa{
-        -webkit-text-stroke: 0.1px white;
-        color: red;
-    }
-    .logo-img{
-        width: 4.5rem;
-        height: 4.5rem;
-    }
-    /*#endregion CSS del Header de la pagina*/
-
-    /*#region footer para resolucion de 480px*/
-    .footer-noticia-img{
-        width: 100%;
-        height: 30rem;
-    }
-    .footer-noticia>div{
-        width: 100%;
-    }
-    /*#endregion*/
+  
+/*#endregion  */
 
     /*#region carousel testimonio*/
 
@@ -748,32 +570,5 @@ footer>.row{
     /*#endregion card noticia*/
 
 }
-@media (max-width: 380px){
-    /*#region CSS del Header de la pagina*/
-    h1{
-        font-family: sans-serif;
-        font-size: 1.5rem;
-    }
-    /*#endregion CSS del Header de la pagina*/
 
-    /*#region card noticia*/
-
-    .card-noticia{
-        width: 33rem;
-        height: 21rem;
-        margin: 2rem;
-    }
-    .card-noticia-descripcion{
-        bottom: 32%;
-    }
-    .card-noticia-titulo{
-        padding: 1rem 2rem 0 2rem;
-        font-size: 1.4rem;
-    }
-    .card-noticia-text{
-        font-size: 1rem;
-    }
-
-    /*#endregion card noticia*/
-}
-/*endregion Para que la pagina sea Resposive */
+/* #endregion resolucion 576px */
